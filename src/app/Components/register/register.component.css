@@ -1,0 +1,8 @@
+button{
+    background: red;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    transition: .8s;
+}

@@ -1,0 +1,82 @@
+.card-header{
+    background: red;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card-img-top {
+    width: 80%;
+    align-self: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    position: relative;
+    letter-spacing: 0.25em;
+    margin: 0 auto;
+    padding: 1rem 2.5rem;
+    background: transparent;
+    outline: none;
+    font-size: 28px;
+    color:white;
+}
+
+button::after,
+button::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    transform: skewX(30deg);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: -2;
+}
+
+button::before {
+    background-color: red;
+    top: -1rem;
+    left: 0rem;
+}
+
+button::after {
+    background-color: red;
+    top: 1rem;
+    left: 8rem;
+}
+
+button:hover::before, button:hover::after {
+    top: 0;
+    transform: skewx(0deg);
+}
+
+button:hover::after {
+    left: 0rem;
+}
+
+button:hover::before {
+    left: 8.75rem;
+}
+
+body,html{
+	height: 100%;
+}
+
+body {
+	color: black;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+
+.container {
+	width: auto;
+	margin: auto;
+}
+
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+}
