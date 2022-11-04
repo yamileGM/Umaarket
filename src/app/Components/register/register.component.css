@@ -1,8 +1,156 @@
-button{
+.formularioLogin{
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: 0px auto;
+}
+.acceder{
     background: red;
     padding: 10px;
+    width: 100%;
     font-size: 18px;
+    font-weight: 600!Important;
     color: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
     transition: .8s;
 }
+
+.acceder:hover{
+    color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.form-control{
+    background: rgba(0,0, 0,0.4);
+    border-style: none;
+    transition: 0.6s ease-in;
+    outline: none;
+    box-shadow: none;
+}
+.form-control:focus{
+    background: rgba(0,0, 0,0.1);
+    box-shadow: none;
+    outline: none;
+}
+.form-control::placeholder{
+    color: white;
+}
+
+.bck{
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 1);
+    width: 80%;
+}
+
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    }
+    body {
+    background: #333;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    }
+    .buttons {
+    text-align: center;
+    }
+    .blob-btn {
+    z-index: 1;
+    position: relative;
+    padding: 20px 46px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: color 0.5s;
+    cursor: pointer;
+    }
+    .blob-btn:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px solid red;
+    }
+    .blob-btn:after {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    transition: all 0.3s 0.2s;
+    }
+    .blob-btn:hover {
+    color: white;
+    }
+    .blob-btn:hover:after {
+    transition: all 0.3s;
+    left: 0;
+    top: 0;
+    }
+    .blob-btn__inner {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    }
+    .blob-btn__blobs {
+    position: relative;
+    display: block;
+    height: 100%;
+    filter: url('#goo');
+    }
+    .blob-btn__blob {
+    position: absolute;
+    top: 6px;
+    width: 25%;
+    height: 100%;
+    background: red;
+    border-radius: 100%;
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    transition: transform 0.45s;
+    }
+    .blob-btn__blob:nth-child(1) {
+    left: 0%;
+    transition-delay: 0s;
+    }
+    .blob-btn__blob:nth-child(2) {
+    left: 30%;
+    transition-delay: 0.08s;
+    }
+    .blob-btn__blob:nth-child(3) {
+    left: 60%;
+    transition-delay: 0.16s;
+    }
+    .blob-btn__blob:nth-child(4) {
+    left: 90%;
+    transition-delay: 0.24s;
+    }
+    .blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.7);
+    }
+
+    .btnn{
+        background-color: red;
+        color: white;
+    }
+
+    .btnn::selection{
+        background-color: blue;
+    }

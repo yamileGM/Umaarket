@@ -1,13 +1,15 @@
-<ng-template #registroEmpresa let-modal>
-    <div class="modal-header">
-      <h4 class="modal-title">Registro de Empresa</h4>
-      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-        <form action="">
-            <div class="form-group mx-sm-4">
+<div class="container">
+  <div class="pt-0 m-0 row justify-content-center">
+      <div class="bck">
+      <div class="col-md-8 col-sm-8 col-xl-5 col-lg-6 formularioLogin my-3">
+          <form action="">
+              <div class="form-group text-center pt-2 pb-4">
+                  <h1>REGISTRO</h1>
+              </div>
+              
+              
+
+              <div class="form-group mx-sm-4">
                 <div class="etiqueta">*Nombre:</div>
                 <input class="form-control" type="text" name="nombre" placeholder="Ingrese nombre de empresa" required><!--[(ngModel)]="nombre"-->
             </div>
@@ -55,14 +57,32 @@
               <div class="etiqueta">*Confirmar contraseña:</div>
                 <input class="form-control" type="password" name="password2" placeholder="Ingrese contraseña" required><!--[(ngModel)]="password2"-->
             </div>
-            <div class="form-group mx-sm-4">
-              <input type="submit" class="btn btn-block btn-success acceder" value="REGISTRAR"><!--(click)="registrar()"-->
-              <input type="reset" class="btn btn-block btn-success acceder" value="LIMPIAR"><!--(click)="limpiar()"-->
-            </div>
-        </form>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Cerrar</button>
-    </div>
-</ng-template>
-<button class="btn mb-2 mr-2">Registra tu empresa</button><!--(click)="openScrollableContent(registroEmpresa)"-->
+        
+              
+              
+            <br><br>
+              <div class="buttons">
+                  <button class="blob-btn" [routerLink]="'login'">
+                    Registrar
+                      <span class="blob-btn__inner">
+                          <span class="blob-btn__blobs">
+                              <span class="blob-btn__blob"></span>
+                              <span class="blob-btn__blob"></span>
+                              <span class="blob-btn__blob"></span>
+                              <span class="blob-btn__blob"></span>
+                          </span>
+                      </span>
+                  </button>
+              </div>
+
+              
+              <button class="btn btnn mb-2 mr-2" (click)="limpiar()">
+                Limpiar
+              </button>
+
+
+          </form>
+      </div>
+      </div>
+  </div>
+</div>

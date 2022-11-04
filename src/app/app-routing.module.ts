@@ -5,6 +5,7 @@ import { RegisterComponent } from './Components/register/register.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { IndexComponent } from './Components/index/index.component';
 import { ProductsComponent } from './Components/products/products.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 const routes: Routes = [
   { path: "login", component: LoginComponent, pathMatch: "full" },
@@ -15,7 +16,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes),
+    NgbModule ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
