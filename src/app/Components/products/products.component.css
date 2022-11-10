@@ -1,3 +1,51 @@
-.md{
-    display: inline-flex;
+.tbP{
+    background-color: white;
+    align-self: center;
+    border: grey;
+    border-radius: 20px;
+    margin-top: 2em;
+    border: 1px grey solid;
+}
+
+.tbP thead{
+    background-color: red;
+    color:white;
+}
+
+.ind{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.6);
+    /*padding: 20px;*/
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 1);
+    width: 90%;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.empMess{
+    background-color: #75F9A9;
+    border-radius:10px;
+    text-align:center;
+    border: solid 1px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.prodEsp{
+    background-color: white;
+    border-radius:15px;
+    border:solid 1px;
+    text-align: center;
+}
+
+.prodEsp img{
+    width: 60%;
+}
+
+.fa-solid{
+    cursor: pointer;
 }

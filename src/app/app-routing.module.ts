@@ -8,11 +8,13 @@ import { ProductsComponent } from './Components/products/products.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 const routes: Routes = [
-  { path: "login", component: LoginComponent, pathMatch: "full" },
-  { path: "register", component: RegisterComponent, pathMatch: "full" },
-  { path: "header", component: HeaderComponent, pathMatch: "full" },
-  { path: "", component: IndexComponent, pathMatch: "full" },
-  { path: "products", component: ProductsComponent, pathMatch: "full" }
+  { path: "login", component: LoginComponent },
+  { path: "register", component: RegisterComponent },
+  { path: "header", component: HeaderComponent },
+  { path: "", component: IndexComponent },
+  { path: "products", component: ProductsComponent }, //products/:id
+  { path: "**", redirectTo: "" , pathMatch: "full" }
+  //{ path: "**", redirectTo: "404" }
 ];
 
 @NgModule({

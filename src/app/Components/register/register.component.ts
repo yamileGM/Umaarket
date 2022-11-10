@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -18,7 +19,6 @@ export class RegisterComponent implements OnInit {
   sede: string = "";
   horario_atencion: string = "";
   areas: string = "";
-  extras: string = "";
   url_logo: string = "";
   submitted = false;
 
@@ -40,7 +40,7 @@ export class RegisterComponent implements OnInit {
     this.sede = "";
     this.horario_atencion = "";
     this.areas = "";
-    this.extras = "";
+    
     this.url_logo = "";
   }
 }
