@@ -1,0 +1,38 @@
+<div class="container ind">
+    <div class="row">
+            <div class="card-group">
+                <div class="card" *ngFor="let negocio of negocios">
+                    <div class="card-header">
+                        <h3>{{negocio.nombre_negocio}}</h3>
+                    </div>
+                    <img class="card-img-top" src="../../../assets/img/{{negocio.img}}.jpg" alt="Card image">
+                    <div class="card-body">
+                        <!--<h6 class="card-title">{{negocio.nombre_negocio}}</h6>-->
+                        <p class="card-text">
+                            Categoría: {{negocio.id_cat_neg}}
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                Ubicación: {{negocio.ubicacion_negocio}}
+                            </small>
+                        </p>
+
+                        <div class="buttons">
+                            <button class="blob-btn" routerLink="products" (click)="seleccionar(negocio)">
+                                Visitar
+                                <span class="blob-btn__inner">
+                                    <span class="blob-btn__blobs">
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                        <span class="blob-btn__blob"></span>
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

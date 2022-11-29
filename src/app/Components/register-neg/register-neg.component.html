@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="pt-0 m-0 row justify-content-center">
+        <div class="bck">
+        <div class="col-md-8 col-sm-8 col-xl-5 col-lg-6 formularioLogin my-3">
+            <form action="">
+                <div class="form-group text-center pt-2 pb-4 hlog">
+                    <h1 style="height:20px;">REGISTRO</h1>
+                </div>
+                
+                <br>
+  
+                <div class="form-group mx-sm-4">
+                  <div class="etiqueta">*Nombre:</div>
+                  <input class="form-control" type="text" name="nombre" placeholder="Ingrese nombre de negocio" required><!--[(ngModel)]="nombre"-->
+              </div>
+              <div class="form-group mx-sm-4 pt-2">
+                <div class="etiqueta">Ubicación regular:</div>
+                  <input class="form-control" type="text" name="email" placeholder="Ingrese ubicación dentro de la UAA" required><!--[(ngModel)]="email"-->
+              </div>
+              <div class="form-group mx-sm-4 pt-2">
+                <div class="etiqueta">*Categoría:</div>
+                  <input class="form-control" type="number" name="telefono" placeholder="Ingrese categoría" required><!--[(ngModel)]="telefono"-->
+              </div>
+              <div class="form-group mx-sm-4 pt-2">
+                <div class="etiqueta">*Emprendedor a cargo:</div>
+                  <input class="form-control" type="text" name="horario_atencion" placeholder="Ingrese alias de emprendedor" required><!--[(ngModel)]="horario_atencion"-->
+              </div>
+              <div class="form-group mx-sm-4 pt-2">
+                <div class="etiqueta">Nombre de logo:</div>
+                  <input class="form-control" type="text" name="name_logo" placeholder="Ingrese nombre de logo" required><!--[(ngModel)]="url_logo"-->
+              </div>
+
+              <br><br>
+                <div class="buttons">
+                    <button class="blob-btn" [routerLink]="'login'">
+                      Registrar
+                        <span class="blob-btn__inner">
+                            <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+  
+                
+                <button class="btn btnn mb-2 mr-2" (click)="limpiar()">
+                  Limpiar
+                </button>
+  
+  
+            </form>
+        </div>
+        </div>
+    </div>
+  </div>

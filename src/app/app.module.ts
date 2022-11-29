@@ -1,15 +1,28 @@
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ReactiveFormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
+
+//COMPONENTS
 import { HeaderComponent } from './Components/header/header.component';
 import { LoginComponent } from './Components/login/login.component';
-import { IndexComponent } from './Components/index/index.component';
-//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ProductsComponent } from './Components/products/products.component';
+//import { ProductsComponent } from './Components/products/products.component';
 import { RegisterComponent } from './Components/register/register.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { RegisterNegComponent } from './Components/register-neg/register-neg.component';
+
+//SERVICIOS
+import { NegocioService } from './Services/negocio.service';
+import { CommonModule } from '@angular/common';
+
+
+import { NegociosModule } from './Components/negocios/negocios.module';
 
 
 @NgModule({
@@ -17,17 +30,21 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     HeaderComponent,
     LoginComponent,
-    IndexComponent,
-    ProductsComponent,
-    RegisterComponent
+    //ProductsComponent,
+    RegisterComponent,
+    RegisterNegComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
-    //NgbModule
+    ReactiveFormsModule,
+    CommonModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    //NgbModule      
+      NegociosModule
   ],
-  providers: [],
+  providers: [NegocioService], //AuthGuard
   bootstrap: [AppComponent]
 })
 export class AppModule { }

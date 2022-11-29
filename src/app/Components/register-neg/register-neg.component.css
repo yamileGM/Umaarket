@@ -1,0 +1,63 @@
+.formularioLogin{
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: 0px auto;
+}
+
+.acceder{
+    background: red;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600!Important;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    transition: .8s;
+}
+
+.acceder:hover{
+    color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.form-control{
+    background: rgba(0,0, 0,0.4);
+    border-style: none;
+    transition: 0.6s ease-in;
+    outline: none;
+    box-shadow: none;
+}
+
+.form-control:focus{
+    background: rgba(0,0, 0,0.1);
+    box-shadow: none;
+    outline: none;
+}
+
+.form-control::placeholder{
+    color: white;
+}
+
+.bck{
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 1);
+    width: 80%;
+}
+
+.btnn{
+    background-color: red;
+    color: white;
+}
+
+.btnn::selection{
+    background-color: blue;
+}
+
+.hlog{
+    background-color: red;
+    border-radius: 8px;
+    color: white;
+}
